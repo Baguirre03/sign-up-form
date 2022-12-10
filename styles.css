@@ -1,3 +1,6 @@
+@import url(https://fonts.google.com/specimen/Oswald);
+
 :root {
     color: blue;
+    font-family: 'Oswald';
 }
