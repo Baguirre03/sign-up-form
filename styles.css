@@ -54,6 +54,7 @@ img[src="images/odin-lined.png"] {
     width: var(--left-width);
     top: 95vh;
     font-size: 2vmin;
+    font-family: var(--RubiksFamily-font-family);
     text-align: center;
 }
 
@@ -65,4 +66,16 @@ img[src="images/odin-lined.png"] {
     justify-content: center;
     background-color: black;
     gap: 20px;
+}
+
+a:link {
+    color: lightblue;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+#login {
+    text-decoration: none;
 }
