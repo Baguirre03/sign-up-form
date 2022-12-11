@@ -31,30 +31,30 @@
             </div>
             <div class="formContainer">
                 <div>Let's do this!</div>
-                <form action="example.com/path" method="post">
-
-                    <label for="first_name">First Name *</label>
-                    <input type="text" id="first_name" placeholder="Jane" name="first_name">
-
-                    <label for="last_name">Last Name *</label>
-                    <input type="text" id="last_name" placeholder="Doe" name="last_name">
-
-                    <label for="email_input">Email</label>
-                    <input type="email" name="email_input" id="email_input" placeholder="bla@gmail.com">
-
-                    <label for="phone_number">Phone Number</label>
-                    <input type="text" name="phone_number" id="phone_number" placeholder="123-345-6789">
-
-                    <label for="password">Password *</label>
-                    <input type="password" name="password" id="password">
-
-                    <label for="confirm_password">Confirm Password *</label>
-                    <input type="password" name="confirm_password" id="confirm_password">
+                <form id="form">
+                    <div class="leftColumn">
+                        <label for="first_name" required>First Name *</label>
+                        <input type="text" id="first_name" name="first_name">
+    
+                        <label for="email_input">Email</label>
+                        <input type="email" name="email_input" id="email_input">
+    
+                        <label for="password" rquired>Password *</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="rightColumn">
+                        <label for="last_name" required>Last Name *</label>
+                        <input type="text" id="last_name" name="last_name">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="number" name="phone_number" id="phone_number">
+                        <label for="confirm_password" required>Confirm Password *</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
                 </form>
             </div>
             <div class="submitLogin">
                 <div class="submitBtn">
-                    <button>Submit</button>
+                    <button type="clear" form="form">Create Account</button>
                 </div>
                 <div class="logInHolder">
                     Already have an account? <a href="https://www.youtube.com/watch?v=ifTF3ags0XI" id="login">Log in</a>
