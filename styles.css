@@ -1,6 +1,64 @@
 @import url(https://fonts.google.com/specimen/Oswald);
 
 :root {
-    color: blue;
+    color: white;
     font-family: 'Oswald';
+    min-height: 100vh;
+    --left-width: 30vw /* for left side images + content */
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+}
+
+img[src="images/backgroundimage.jpg"] {
+    width: var(--left-width);
+    height: 100vh;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+img[src="images/odin-lined.png"] {
+    width: 4rem;
+}
+
+.odin {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    bottom: 50%;
+    width: var(--left-width);
+    opacity: .7;
+    text-align: center;
+    justify-content: center;
+}
+
+.credit {
+    position: absolute;
+    color: white;
+    align-items: center;
+    width: var(--left-width);
+    top: 95vh;
+    font-size: 2vmin;
+    text-align: center;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
 }
