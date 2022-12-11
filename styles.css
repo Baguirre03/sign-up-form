@@ -61,4 +61,5 @@ img[src="images/odin-lined.png"] {
     width: 100%;
     justify-content: center;
     background-color: black;
+    gap: 20px;
 }
