@@ -18,37 +18,56 @@
             <div class="information">
                 <div>
                     This is not a real online service!
-                    You know you need something like this in your life
-                    to help you realize your deepest dreams.
+                    You know you need something like this in your 
+                    <br>
+                        life
+                        to help you realize your deepest dreams.
+                    </br>
+                    Sign up <em style="color: lightblue">now</em> to get started.
                 </div>
-                <div>
-                        Sign up <em>now</em> to get started.
-                </div>
-
-                <div>
+                <div class="want">
                     You <em style="color: lightcoral">know</em> you want to
                 </div>
             </div>
             <div class="formContainer">
-                <div>Let's do this!</div>
-                <form id="form">
-                    <div class="leftColumn">
-                        <label for="first_name" required>First Name *</label>
-                        <input type="text" id="first_name" name="first_name">
-    
-                        <label for="email_input">Email</label>
-                        <input type="email" name="email_input" id="email_input">
-    
-                        <label for="password" rquired>Password *</label>
-                        <input type="password" name="password" id="password">
+                <div class="cta">Let's do this!</div>
+                <form id="form" class="form">
+                    <div class="rowOne">
+                        <div class="firstName">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" required
+                                placeholder="Jane">
+                        </div>
+                        <div class="lastName">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required
+                                placeholder="Doe">
+                        </div>
                     </div>
-                    <div class="rightColumn">
-                        <label for="last_name" required>Last Name *</label>
-                        <input type="text" id="last_name" name="last_name">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="number" name="phone_number" id="phone_number">
-                        <label for="confirm_password" required>Confirm Password *</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                    <div class="rowTwo">
+                        <div class="email">
+                            <label for="email_input">Email</label>
+                            <input type="email" name="email_input" id="email_input" 
+                                required title="example: TOP@gmail.com"
+                                placeholder="example@gmail.com">
+                        </div>
+                        <div class="number">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="number" name="phone_number" id="phone_number" 
+                                maxlength="10" minlength="9"
+                                placeholder="3335559999"
+                                title="Format your phone number without any additional characters">
+                        </div>
+                    </div>
+                    <div class="rowThree">
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="confirm">
+                            <label for="confirm_password" required>Confirm Password</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                        </div>
                     </div>
                 </form>
             </div>

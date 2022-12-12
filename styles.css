@@ -5,16 +5,16 @@
     font-family: "Oswald";
     min-height: 100vh;
     --paddingForRight--padding: 30px 30px 0px 30px;
-    --left-width: 30vw; /* for left side images + content */
+    --left-width: 33vw; /* for left side images + content */
 }
 
 body {
     margin: 0;
 }
 
-
 .container {
     display: flex;
+    max-height: 100vh;
 }
 
 img[src="images/backgroundimage.jpg"] {
@@ -38,11 +38,12 @@ img[src="images/odin-lined.png"] {
     color: white;
     font-size: 2rem;
     background-color: black;
-    bottom: 50%;
+    bottom: 60%;
     width: var(--left-width);
     opacity: .7;
     text-align: center;
     justify-content: center;
+    height: 15vh;
 }
 
 .credit {
@@ -63,45 +64,74 @@ img[src="images/odin-lined.png"] {
     justify-content: center;
     background-color: black;
     font-size: 18px;
+    height: 100vh;
 }
 
 .information {
-    padding: var(--paddingForRight--padding)
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.want { 
+    padding-top: 13px;
 }
 
 .formContainer {
     padding: var(--paddingForRight--padding);
-    border: solid;
-    border-color: white;
     padding-bottom: 30px;
-}
-
-form {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.leftColumn {
-    display: flex;
-    flex-direction: column;
-    min-width: 30%;
-}
-
-.rightColumn {
-    display: flex;
-    flex-direction: column;
-    min-width: 30%;
-}
-
-input {
-    width: 80%;
+    border-top: 5px lightblue solid;
+    border-bottom: 5px lightblue solid;
+    background-color: white;
+    color: black;
 }
 
 .submitLogin {
     gap: 40px;
     padding: var(--paddingForRight--padding);
-    padding-top: 2px;
+    padding-top: 10px;
+}
+
+.cta {
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    font-size: 1rem;
+    color: darkslategrey;
+}
+
+.rowOne {
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.rowTwo {
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.rowThree {
+    display: flex;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+input, label{
+    display: block
+}
+
+input {
+    width: 20vw;
+    height: 3vh;
+    border-radius: 6px;
+    border-color: black;
 }
 
 .submitBtn {
@@ -121,14 +151,14 @@ a:visited {
     text-decoration: none;
 }
 
-input:focus {
-    border: red;
-}
 
 button {
     background-color: lightcoral;
+    color: white;
+    font-size: 1rem;
     border-radius: 4px;
     padding: 8px;
     padding-left: 30px;
     padding-right: 30px;
+    border-style: ridge;
 }
