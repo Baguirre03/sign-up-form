@@ -1,9 +1,6 @@
-@import url(https://fonts.google.com/specimen/Oswald);
-
 :root {
     color: white;
     font-family: "Oswald";
-    min-height: 100vh;
     --paddingForRight--padding: 30px 30px 0px 30px;
     --left-width: 33vw; /* for left side images + content */
 }
@@ -25,6 +22,7 @@ img[src="images/backgroundimage.jpg"] {
 .imageContainer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 img[src="images/odin-lined.png"] {
@@ -72,6 +70,7 @@ img[src="images/odin-lined.png"] {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+
 }
 
 .want { 
@@ -90,7 +89,7 @@ img[src="images/odin-lined.png"] {
 .submitLogin {
     gap: 40px;
     padding: var(--paddingForRight--padding);
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .cta {
